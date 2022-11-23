@@ -7,12 +7,12 @@ app = Flask(__name__)
 
 @app.route('/', methods=['GET'])
 def index() -> str:
-    roman: str = str(request.args.get("roman"))
+    fv_pv: str = str(request.args.get("fv_pv"))
     arabic: int = -1
-    if roman != "None":
-        arabic = Roman.convert(roman)
+    if fv_pv != "None":
+        arabic = Roman.convert(fv_pv)
 
-    return render_template("index.html", roman=roman, arabic=arabic)
+    return render_template("index.html", fv_pv=fv_pv, arabic=arabic)
 
 
 if __name__ == '__main__':
