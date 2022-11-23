@@ -1,24 +1,48 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Roman Numerals Converter</title>
+    <title>Resi-Fit Savings Plan Tools</title>
 </head>
 <body>
-    <img src="static/image/justin-chrn-SthdDLf9hxQ-unsplash.jpg" width="200">
-    <h1>The Amazing Roman Numerals Converter</h1>
-    {% if roman != "None" %}
-        <p>You typed Roman numeral: {{roman}}.
-            {% if arabic == -1 %}
-                Uh oh, that's not a valid Roman numeral.
-            {% else %}
-                In normal numbers, that's: {{arabic}}. Cool!
-            {% endif %}
-        </p>
-    {% endif %}
-    <p>Enter a{% if roman != "None" %}nother{% endif %} Roman numeral, and we'll convert it to a normal number for you. Yay!</p>
+{#    <img src="static/image/justin-chrn-SthdDLf9hxQ-unsplash.jpg" width="200">#}
+
+{#    {% if fv_pv != "None" %}#}
+{#        <p>You typed Roman numeral: {{roman}}.#}
+{#            {% if arabic == -1 %}#}
+{#                Uh oh, that's not a valid Roman numeral.#}
+{#            {% else %}#}
+{#                In normal numbers, that's: {{arabic}}. Cool!#}
+{#            {% endif %}#}
+{#        </p>#}
+{#    {% endif %}#}
+{#    <p>Enter a{% if roman != "None" %}nother{% endif %} Roman numeral, and we'll convert it to a normal number for you. Yay!</p>#}
+     <h1>Use this calculator to project the future value of your savings based on regular contributions.</h1>
     <form>
-        <label for="roman">Roman numeral:</label>
-        <input type="text" id="roman" name="roman"><br>
+        <label for="fv_pv">Starting Balance:</label>
+        <input type="text" id="fv_pv" name="fv_pv"><br>
+        <label for="fv_pmt">Contribution:</label>
+        <input type="text" id="fv_pmt" name="fv_pmt"><br>
+        <label for="fv_n">Number of Periods:</label>
+        <input type="text" id="fv_n" name="fv_n"><br>
+        <label for="fv_rate">Anticipated Rate of Return:</label>
+        <input type="text" id="fv_rate" name="fv_rate"><br>
+        <label for="fv_fv">Expected Savings Balance:</label>
+        <input type="text" id="fv_fv" name="fv_fv"><br>
+        <input type="submit" value="Submit">
+    </form>
+    <br><br>
+    <h1>This next calculator can be used to suggest a payment amount to make to hit a long term savings goal </h1>
+    <form>
+        <label for="pmt_pv">Starting Balance:</label>
+        <input type="text" id="pmt_pv" name="pmt_pv"><br>
+        <label for="pmt_pmt">Desired Ending Savings Balance:</label>
+        <input type="text" id="pmt_pmt" name="pmt_pmt"><br>
+        <label for="pmt_n">Number of Periods:</label>
+        <input type="text" id="pmt_n" name="pmt_n"><br>
+        <label for="pmt_rate">Anticipated Rate of Return:</label>
+        <input type="text" id="pmt_rate" name="pmt_rate"><br>
+        <label for="fv_fv">Require Routing Contributions</label>
+        <input type="text" id="pmt_pmt" name="pmt_pmt"><br>
         <input type="submit" value="Submit">
     </form>
 </body>
