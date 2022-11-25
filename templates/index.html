@@ -26,24 +26,28 @@
         <input type="text" id="fv_n" name="fv_n"><br>
         <label for="fv_rate">Anticipated Rate of Return:</label>
         <input type="text" id="fv_rate" name="fv_rate"><br>
-        <label for="fv_fv">Expected Savings Balance:</label>
-        <input type="text" id="fv_fv" name="fv_fv"><br>
-        <input type="submit" value="Submit">
+        <input type="submit" value="Submit"><br><br>
+        {% if fv %}
+            <label for="fv">Expected Savings Balance:</label>
+            <input type="text" id="fv" name="fv", value={{fv}}><br>
+        {% endif %}
     </form>
     <br><br>
     <h1>This next calculator can be used to suggest a payment amount to make to hit a long term savings goal </h1>
     <form>
         <label for="pmt_pv">Starting Balance:</label>
         <input type="text" id="pmt_pv" name="pmt_pv"><br>
-        <label for="pmt_pmt">Desired Ending Savings Balance:</label>
-        <input type="text" id="pmt_pmt" name="pmt_pmt"><br>
+        <label for="pmt_fv">Desired Ending Savings Balance:</label>
+        <input type="text" id="pmt_fv" name="pmt_fv"><br>
         <label for="pmt_n">Number of Periods:</label>
         <input type="text" id="pmt_n" name="pmt_n"><br>
         <label for="pmt_rate">Anticipated Rate of Return:</label>
         <input type="text" id="pmt_rate" name="pmt_rate"><br>
-        <label for="fv_fv">Require Routing Contributions</label>
-        <input type="text" id="pmt_pmt" name="pmt_pmt"><br>
-        <input type="submit" value="Submit">
+        <input type="submit" value="Submit"><br><br>
+        {% if pmt %}
+            <label for="pmt">Required Savings Contribution:</label>
+            <input type="text" id="pmt" name="pmt", value={{pmt}}><br>
+        {% endif %}
     </form>
 </body>
 </html>
