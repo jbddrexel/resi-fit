@@ -17,36 +17,46 @@
 {#    {% endif %}#}
 {#    <p>Enter a{% if roman != "None" %}nother{% endif %} Roman numeral, and we'll convert it to a normal number for you. Yay!</p>#}
      <h1>Use this calculator to project the future value of your savings based on regular contributions.</h1>
-    <form>
+    <form method="get">
         <label for="fv_pv">Starting Balance:</label>
-        <input type="text" id="fv_pv" name="fv_pv"><br>
+        <input type="text" id="fv_pv" name="fv_pv" value={{ fv['fv_pv'] }}><br>
         <label for="fv_pmt">Contribution:</label>
-        <input type="text" id="fv_pmt" name="fv_pmt"><br>
+        <input type="text" id="fv_pmt" name="fv_pmt" value={{ fv['fv_pmt'] }}><br>
         <label for="fv_n">Number of Periods:</label>
-        <input type="text" id="fv_n" name="fv_n"><br>
-        <label for="fv_rate">Anticipated Rate of Return:</label>
-        <input type="text" id="fv_rate" name="fv_rate"><br>
+        <input type="text" id="fv_n" name="fv_n" value={{ fv['fv_n'] }}>
+        <select id="fv_freq" name="fv_freq">
+            <option value="years" {% if fv['fv_freq'] == 'years' %} selected {% endif %}>years</option>
+            <option value="months" {% if fv['fv_freq'] == 'months' %} selected {% endif %}>months</option>
+            <option value="days" {% if fv['fv_freq'] == 'days' %} selected {% endif %}>days</option>
+        </select><br>
+        <label for="fv_rate">Anticipated Rate of Return (APR%):</label>
+        <input type="text" id="fv_rate" name="fv_rate", value={{ fv['fv_rate'] }}><br>
         <input type="submit" value="Submit"><br><br>
-        {% if fv %}
+        {% if fv['val'] %}
             <label for="fv">Expected Savings Balance:</label>
-            <input type="text" id="fv" name="fv", value={{fv}}><br>
+            <input type="text" id="fv" name="fv", value={{ fv['val'] }}><br>
         {% endif %}
     </form>
     <br><br>
     <h1>This next calculator can be used to suggest a payment amount to make to hit a long term savings goal </h1>
-    <form>
+    <form method="get">
         <label for="pmt_pv">Starting Balance:</label>
-        <input type="text" id="pmt_pv" name="pmt_pv"><br>
+        <input type="text" id="pmt_pv" name="pmt_pv", value={{ pmt['pmt_pv'] }}><br>
         <label for="pmt_fv">Desired Ending Savings Balance:</label>
-        <input type="text" id="pmt_fv" name="pmt_fv"><br>
+        <input type="text" id="pmt_fv" name="pmt_fv", value={{ pmt['pmt_fv'] }}><br>
         <label for="pmt_n">Number of Periods:</label>
-        <input type="text" id="pmt_n" name="pmt_n"><br>
+        <input type="text" id="pmt_n" name="pmt_n", value={{ pmt['pmt_n'] }}>
+        <select id="pmt_freq" name="pmt_freq">
+            <option value="years" {% if pmt['pmt_freq'] == 'years' %} selected {% endif %}>years</option>
+            <option value="months" {% if pmt['pmt_freq'] == 'months' %} selected {% endif %}>months</option>
+            <option value="days" {% if pmt['pmt_freq'] == 'days' %} selected {% endif %}>days</option>
+        </select><br>
         <label for="pmt_rate">Anticipated Rate of Return:</label>
-        <input type="text" id="pmt_rate" name="pmt_rate"><br>
+        <input type="text" id="pmt_rate" name="pmt_rate", value={{ pmt['pmt_rate'] }}><br>
         <input type="submit" value="Submit"><br><br>
-        {% if pmt %}
+        {% if pmt['val'] %}
             <label for="pmt">Required Savings Contribution:</label>
-            <input type="text" id="pmt" name="pmt", value={{pmt}}><br>
+            <input type="text" id="pmt" name="pmt", value={{ pmt['val'] }}><br>
         {% endif %}
     </form>
 </body>
