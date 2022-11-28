@@ -403,6 +403,9 @@ Overall, Tyrell was impressed with the calculator functionality. We demo'd He un
 - Screenshot of GREEN build being deployed to server:
 ** TODO **
 
+** Screenshot of a test that will never pass being committed and pushed to GitHub: **
+![Screen Shot 2022-11-28 at 12 52 32 PM](https://user-images.githubusercontent.com/43096506/204350868-3e2b4cdb-0787-49de-bc53-0e329069c94d.png)
+
 - Screenshot of RED build NOT being deployed to server:
 ** TODO **
 
