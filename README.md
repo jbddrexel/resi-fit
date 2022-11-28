@@ -293,7 +293,6 @@ Screenshot of Site Homepage:
 **Sample Image of Kanban Board:**
 ![image](https://user-images.githubusercontent.com/43096506/203096953-4774b4eb-773f-4e53-a0a7-4347fcdcbb4e.png)
 
-
 ## Sprint Burndown Chart
 Burndown Chart as of 11/21/2022:
 ![image](https://user-images.githubusercontent.com/43096506/203096608-84aecc45-4d07-485c-893c-2ecdb039b36b.png)
@@ -355,10 +354,16 @@ Screenshot of Site Homepage:
 ![Screen Shot 2022-11-27 at 7 26 58 PM](https://user-images.githubusercontent.com/43096506/204168275-173086f7-eae2-4118-b936-77e225567de1.png)
 
 ## Sprint Review
-- All three sprint backlog items were completed during the sprint. Our site is up and running and can be visited by clicking the link provided in the above section of the README! Below is a list of the items that were completed during the sprint with relevant details regarding the completion of the item.
+**ALL TEAM MEMBERS PARTICIPATED IN SPRINT REVIEW!**
+- All three sprint backlog items were completed during the sprint. Our site is up and running and can be visited by clicking the link provided in the above section of the README!
+- General Sprint Review Notes
+	- Passing values back and forth between the front end and back end was tricky. This required a lot of coversions from strings to int,string to float, etc.
+	- We tried to put as much error handling and input validation in place as possible. We think we did a good job but will be monitoring for bad inputs that slip through the cracks!
+	- The current front end is more of a minimum functionalilty prototype whose purpose is really to showcase the FinCalc back end. We will be looking to style this front end up in the next few sprints. 
+	- Link to the Kanban board detailing the completed work: <a href="https://team-resi-fit.youtrack.cloud/agiles/131-3/current">Kanban!</a>
 
 **Backlog Items for the Sprint**
-TOOD 
+- TODO
 
 **Sprint Review Takeaways**
 Overall, Tyrell was impressed with the calculator functionality. We demo'd He understands that we needed to switch from Wix to a more traditional framework and realizes that the added functionality of using such a framework will prove worth the while. We have a few takeaways to formulate as user stories for our backlog:
@@ -372,13 +377,12 @@ Overall, Tyrell was impressed with the calculator functionality. We demo'd He un
 **Screenshot of Stakeholder Terrell Skinner Attending Sprint Review**
 ![Screen Shot 2022-11-27 at 6 34 11 PM](https://user-images.githubusercontent.com/43096506/204170444-d6379119-6c0f-4163-a6c4-1e16c6c29f01.png)
 
-
 **Screenshot of our Revised Product Backlog Following Sprint Review and Stakeholder Feedback!**
-![Screen Shot 2022-11-27 at 7 56 05 PM](https://user-images.githubusercontent.com/43096506/204170396-35f1e02e-ac65-477f-bba7-7e2b141265cd.png)
-
+![Screen Shot 2022-11-27 at 9 07 26 PM](https://user-images.githubusercontent.com/43096506/204176514-7560bd16-026f-42fe-9bed-3257629bd18c.png)
 
 ## Sprint Retrospective
 - We would like to make a priority of furthering Mike's knowledge of the HTML framework we are using, Flask, as well as the FinCalc backend written in Python.
 - We would also like to bring John up to speed on the the main goals of Tyrell's foundation to better inform John when developing the site.
 - **Our new PBIs are at the top of our PB in the below screenshot of the PB following Sprint Review!**
-![Screen Shot 2022-11-27 at 8 26 36 PM](https://user-images.githubusercontent.com/43096506/204173056-e031ec85-8218-4236-b8e3-d5017855a7a1.png)
+![Uploading Screen Shot 2022-11-27 at 8.50.10 PM.png…]()
+
