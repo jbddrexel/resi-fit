@@ -399,7 +399,7 @@ Overall, Tyrell was impressed with the calculator functionality. We demo'd He un
 	- The build is "red if all tests DO NOT pass successfully. When the build is red, the software will NOT be deployed to the production server.
 - The below screenshots serve as evidence that our system is working properly. When tests fail, the software is not deployed. When they pass, the software is deployed.
 
-** Evidence that our CD works properly: **
+**Evidence that our CD works properly:**
 - Screenshot of GREEN build being deployed to server:
 ** TODO **
 
@@ -407,7 +407,7 @@ Overall, Tyrell was impressed with the calculator functionality. We demo'd He un
 ![Screen Shot 2022-11-28 at 12 52 32 PM](https://user-images.githubusercontent.com/43096506/204350868-3e2b4cdb-0787-49de-bc53-0e329069c94d.png)
 
 - Screenshot of RED build NOT being deployed to server:
-** TODO **
+**TODO**
 
 -Screenshot of server up and running when either a green build or red build occurs:
 ** TODO **
