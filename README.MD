@@ -282,7 +282,7 @@ Screenshot of Site Homepage:
 
 **Forecast Number of Story Points to Be Completed - 3**
 
-**Rationale** - Using the "Yesterday's Weather" technique, we are setting our set our sprint forecast for sprint three based on what we were able to accomplish in sprint two. We completed three items in sprint two so it makes the most sense for us to forecast three items for spring three. Further, based on our evaluation of the work we completed in sprint two, we want to make sure we can really focus on our three items and complete them to the fullest extent. **Only developers participated in pulling user stories into the sprint backlog.**
+**Rationale** - Using the "Yesterday's Weather" technique, we are setting our set our sprint forecast for sprint three based on what we were able to accomplish in sprint two. We completed three items in sprint two so it makes the most sense for us to forecast three items for spring three. Further, based on our evaluation of the work we completed in sprint two, we want to make sure we can really focus on our three items and complete them to the fullest extent. The Kanban board shows which three stories we pulled into the backlog and they are broken down into developer tasks. **All stories are the right size: each story is less than half our of forecast velocity of three stories. Only developers participated in pulling user stories into the sprint backlog.**
 
 **Backlog Items for the Sprint**
 - Please see Kanban board link for user stories and tasks pulled into the product backlog!
@@ -336,13 +336,12 @@ Burndown Chart as of 11/21/2022:
 ![image](https://user-images.githubusercontent.com/43096506/204018191-f335bd93-de2b-4d9d-adb5-f8176a058b30.png)
 
 ## Unit Tests and Pair Programming
-The unit tests thus far primarly consist of varios tests to test the calulcator funcitonality.
-Mike and John pair programmed on the development of the unit tests for which we have included a screenshot of this task below. Our unit tests are in the TODO file in our repo and we have included the output of our tests passing successfully below as well.
+The unit tests thus far primarly consist of various tests to test the calulcator functionality. Mike and John pair programmed on the development of the unit tests for which we have included a screenshot of this task below. Our unit tests are in the resifit_unittests.py file in our repo and we have included the output of our tests passing successfully below as well.
 
-**Pair Programming Screenshot**
+**Pair Programming Screenshot:**
 ![Screen Shot 2022-11-27 at 6 37 58 PM](https://user-images.githubusercontent.com/43096506/204170489-dfb8e753-477f-4944-9abc-d17454cea992.png)
 
-**Screenshot of All Tests Passing**!
+**Screenshot of All Tests Passing!**
 ![Screen Shot 2022-11-27 at 7 23 16 PM](https://user-images.githubusercontent.com/43096506/204170519-9c9d04df-b109-4744-bc30-3a82453e807c.png)
 
 ## Product Increment Which is Working Software!
@@ -373,46 +372,54 @@ Overall, Tyrell was impressed with the calculator functionality. We demo'd He un
 		- Add an input slot for a tax rate.
 		- Below the calculated return,  show the after tax return dollar amount to drive home the effect taxes have on your total return.
 
-**Screenshot of Stakeholder Terrell Skinner Attending Sprint Review**
+**Screenshot of Stakeholder Terrell Skinner Attending Sprint Review:**
 ![Screen Shot 2022-11-27 at 6 34 11 PM](https://user-images.githubusercontent.com/43096506/204170444-d6379119-6c0f-4163-a6c4-1e16c6c29f01.png)
 
 **Screenshot of our Revised Product Backlog Following Sprint Review and Stakeholder Feedback!**
 ![Screen Shot 2022-11-27 at 9 07 26 PM](https://user-images.githubusercontent.com/43096506/204176514-7560bd16-026f-42fe-9bed-3257629bd18c.png)
 
 ## Continous Integration
-- We have continous intergration set up with a Main branch in GitHub which we push to locally as we write code. 
-- Code changes are pushed to the main branch by developers and there is no branching. We only push to main and must resolve discrepancises if they exists before sending.
+- We have continous integration set up with a Main branch in GitHub which we push to locally as we write code. 
+- Code changes are pushed to the main branch by developers and there is no branching. We only push to main and must resolve discrepancises if they exist before sending.
 - Because we only push to main, and we do this frequently as work is completed, there are no long lived code branches.
 - Every time we push our code to GitHub, our code is automatically built and ready to run on our Digital Ocean server, provided all tests pass.
 
-** Evidence that our CI system works properly: **
+**Evidence that our CI system works properly:**
 - Screenshot of our code being pushed from Pycharm to GitHub
-** TODO **
+![Screen Shot 2022-11-28 at 12 33 09 PM](https://user-images.githubusercontent.com/43096506/204350480-895ead0b-65c1-4b32-8970-986a27f3b485.png)
 
 -Screenshot of Successful Build On Digital Ocean With All Tests Passing:
-** TODO **
+![image](https://user-images.githubusercontent.com/43096506/204352261-fd538f95-1b27-418a-b8b2-9aedc39a3f55.png)
 
 ## Continous Delivery
-- We have a continous delivery sytem running with Digital Ocean that automatically builds our code when we push to GitHub
+- We have a continous delivery sytem running with Digital Ocean that automatically builds our code when we push to GitHub.
 - We have auto deployment set up so that if the build is "green", the software will be automatically deployed to the server.
 	- The build is "green" if all tests pass successfully which Digital Ocean runs when building the software. When the build is green, the software will be deployed to the production server.
 	- The build is "red if all tests DO NOT pass successfully. When the build is red, the software will NOT be deployed to the production server.
 - The below screenshots serve as evidence that our system is working properly. When tests fail, the software is not deployed. When they pass, the software is deployed.
 
-** Evidence that our CD works properly: **
-- Screenshot of GREEN build being deployed to server:
-** TODO **
+**Evidence that our CD works properly:**
+- Screenshot of **GREEN** build being deployed to server:
+![image](https://user-images.githubusercontent.com/43096506/204353164-e733e4c4-6d01-4250-b3cf-bb79686ee626.png)
 
-- Screenshot of RED build NOT being deployed to server:
-** TODO **
+** Screenshot of a test that will never pass being committed and pushed to GitHub: **
+![Screen Shot 2022-11-28 at 12 52 32 PM](https://user-images.githubusercontent.com/43096506/204350868-3e2b4cdb-0787-49de-bc53-0e329069c94d.png)
 
--Screenshot of server up and running when either a green build or red build occurs:
-** TODO **
+- Screenshot of **RED** build **NOT** being deployed to server:
+![image](https://user-images.githubusercontent.com/43096506/204353214-5ddd2eca-0ee1-4ecc-ada3-4a9fe93a3b5e.png)
+
+- Screenshot showing that even though we committed a RED build, the server is still up and running indicating the bad build was not deployed:
+![image](https://user-images.githubusercontent.com/43096506/204353361-0c4575fe-8892-48d8-b0ab-52ae8418f25f.png)
+
 
 ** CI and CD with Pycharm , Github and Digital Ocean is AWESOME!!!**
 
 ## Sprint Retrospective
+**ALL TEAM MEMBERS PARTICIPATED IN THE SPRINT RETROSPECTIVE!**
 - We would like to make a priority of furthering Mike's knowledge of the HTML framework we are using, Flask, as well as the FinCalc backend written in Python.
+	- At the beginning of the next sprint, John and Mike are going to focus on a breakdown of Flask functionality and the implementation details of FinCalc.py
 - We would also like to bring John up to speed on the main goals of Tyrell's foundation to better inform John when developing the site.
+	- At the beginning of the next spring, Mike will educate John on the main goal's of Tyrells foundation so that John will be more informed when writing code.
 - **Our new PBIs are at the top of our PB in the below screenshot of the PB following Sprint Review!**
-![](../../../Desktop/Screen Shot 2022-11-27 at 8.50.10 PM.png)
+![Screen Shot 2022-11-27 at 8 50 10 PM](https://user-images.githubusercontent.com/43096506/204350419-501c7ef9-805c-4926-88b4-e106313576ca.png)
+
