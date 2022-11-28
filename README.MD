@@ -385,10 +385,10 @@ Overall, Tyrell was impressed with the calculator functionality. We demo'd He un
 - Every time we push our code to GitHub, our code is automatically built and ready to run on our Digital Ocean server, provided all tests pass.
 
 **Evidence that our CI system works properly:**
-- Screenshot of our code being pushed from Pycharm to GitHub
+**Screenshot of our code being pushed from Pycharm to GitHub**
 ![Screen Shot 2022-11-28 at 12 33 09 PM](https://user-images.githubusercontent.com/43096506/204350480-895ead0b-65c1-4b32-8970-986a27f3b485.png)
 
--Screenshot of Successful Build On Digital Ocean With All Tests Passing:
+**Screenshot of Successful Build On Digital Ocean With All Tests Passing:**
 ![image](https://user-images.githubusercontent.com/43096506/204352261-fd538f95-1b27-418a-b8b2-9aedc39a3f55.png)
 
 ## Continous Delivery
@@ -400,21 +400,20 @@ Overall, Tyrell was impressed with the calculator functionality. We demo'd He un
 - Further, we wrote a production test to GET our webpage to ensure that our website is up after deployment. We ran this test by running the following command on the server console, though you could run the test file from any machine with the proper libraries installed: python app/test/resifit_prod_tests.py. Below, there is a screenshot of the prod tests passing.
 
 **Evidence that our CD works properly:**
-- Screenshot of **GREEN** build being deployed to server:
+**Screenshot of **GREEN** build being deployed to server:**
 ![image](https://user-images.githubusercontent.com/43096506/204353164-e733e4c4-6d01-4250-b3cf-bb79686ee626.png)
 
-** Screenshot of a test that will never pass being committed and pushed to GitHub: **
+**Screenshot of a test that will never pass being committed and pushed to GitHub:**
 ![Screen Shot 2022-11-28 at 12 52 32 PM](https://user-images.githubusercontent.com/43096506/204350868-3e2b4cdb-0787-49de-bc53-0e329069c94d.png)
 
-- Screenshot of **RED** build **NOT** being deployed to server:
+**Screenshot of **RED** build **NOT** being deployed to server:**
 ![image](https://user-images.githubusercontent.com/43096506/204353214-5ddd2eca-0ee1-4ecc-ada3-4a9fe93a3b5e.png)
 
-- Screenshot showing that even though we committed a RED build, the server is still up and running indicating the bad build was not deployed:
+**Screenshot showing that even though we committed a RED build, the server is still up and running indicating the bad build was not deployed:**
 ![image](https://user-images.githubusercontent.com/43096506/204353361-0c4575fe-8892-48d8-b0ab-52ae8418f25f.png)
 
-- Screenshot of the server console showing that our production tests passed:
+**Screenshot of the server console showing that our production tests passed:**
 ![image](https://user-images.githubusercontent.com/43096506/204376616-0a037be6-78eb-4e36-958b-0c8d3e692cf1.png)
-
 
 **CI and CD with Pycharm , Github and Digital Ocean is AWESOME!!!**
 
