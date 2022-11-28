@@ -200,7 +200,7 @@ class TestFinCalc(unittest.TestCase):
                                'rate, frequency and starting balance and/or ending balance.')
 
     def test_this_test_will_fail(self):
-        self.assertEqual()
+        self.assertEqual(True, False)
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
