@@ -387,7 +387,7 @@ Overall, Tyrell was impressed with the calculator functionality. We demo'd He un
 
 ** Evidence that our CI system works properly: **
 - Screenshot of our code being pushed from Pycharm to GitHub
-** TODO **
+![Screen Shot 2022-11-28 at 12 33 09 PM](https://user-images.githubusercontent.com/43096506/204350480-895ead0b-65c1-4b32-8970-986a27f3b485.png)
 
 -Screenshot of Successful Build On Digital Ocean With All Tests Passing:
 ** TODO **
@@ -415,4 +415,5 @@ Overall, Tyrell was impressed with the calculator functionality. We demo'd He un
 - We would like to make a priority of furthering Mike's knowledge of the HTML framework we are using, Flask, as well as the FinCalc backend written in Python.
 - We would also like to bring John up to speed on the main goals of Tyrell's foundation to better inform John when developing the site.
 - **Our new PBIs are at the top of our PB in the below screenshot of the PB following Sprint Review!**
-![](../../../Desktop/Screen Shot 2022-11-27 at 8.50.10 PM.png)
+![Screen Shot 2022-11-27 at 8 50 10 PM](https://user-images.githubusercontent.com/43096506/204350419-501c7ef9-805c-4926-88b4-e106313576ca.png)
+
