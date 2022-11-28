@@ -199,6 +199,9 @@ class TestFinCalc(unittest.TestCase):
         self.assertEqual(values['errors']['param_count'], 'When using the payment calculator, you must supply values for the number of periods, ' \
                                'rate, frequency and starting balance and/or ending balance.')
 
+    def test_this_test_will_fail(self):
+        self.assertEqual()
+
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     unittest.main(verbosity=2)
