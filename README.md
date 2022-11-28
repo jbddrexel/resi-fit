@@ -300,7 +300,8 @@ Burndown Chart as of 11/21/2022:
 
 ## Daily Scrum #2 - 11/20/2022
 **Items moved from in progress to DONE (COMPLETED IN LAST 24 HOURS):**
-- Retrospective - Data is being collected from multiple sources for this project. Ensure all members of the team are kept abreast of all communication with sources outside the team and that all new thoughts, ideas and improvements are properly communicated. **Completed by Mike and John**
+- Retrospective - Data is being collected from multiple sources for this project. Ensure all members of the team are kept abreast of all communication with sources outside the team and that all new thoughts, ideas and improvements are properly communicated. 
+	- Due to new instructional guidance we had to adjust the construction of our project; effective communication has allowed us to remove new impediments successfully and work towards producing a quality product.**Completed by Mike and John**
 	- Acceptance Criteria - At the beginning of sprint two, the developers recap outside communication, new ideas and improvements that have occurred since the last sprint. This activity will be repeated at the beginning of every scrum. **Completed by Mike and John**
 	
 - Retrospective - Ensure existing user stories are specific. Rework any user stories that are too broad and eliminate similiar user stories. Any new user stories must be specific. **Completed by Mike and John**
@@ -340,19 +341,18 @@ The unit tests thus far primarly consist of varios tests to test the calulcator 
 Mike and John pair programmed on the development of the unit tests for which we have included a screenshot of this task below. Our unit tests are in the TODO file in our repo and we have included the output of our tests passing successfully below as well.
 
 **Pair Programming Screenshot**
-TODO
+![Screen Shot 2022-11-27 at 6 37 58 PM](https://user-images.githubusercontent.com/43096506/204170489-dfb8e753-477f-4944-9abc-d17454cea992.png)
 
 **Screenshot of All Tests Passing**!
-TODO
-
+![Screen Shot 2022-11-27 at 7 23 16 PM](https://user-images.githubusercontent.com/43096506/204170519-9c9d04df-b109-4744-bc30-3a82453e807c.png)
 
 ## Product Increment Which is Working Software!
-The website is up and running and can be found by clicking the below link. Please test our website out and let us know what you think! Both a mobile and desktop version are accesible from the same link.
+The website is up and running and can be found by clicking the below link. Please test our website out and let us know what you think! At this point given that we have migrated over from Wix, the webpage is a simple front end mainly to showcase our financial calclulator backend. Please do try to break it and let us know how it goes!
 
-<a href="https://jbddrexel.wixsite.com/resifit" target="_blank">RESI-FIT!</a>
+<a href="https://resi-fit-quye3.ondigitalocean.app" target="_blank">RESI-FIT!</a>
 
 Screenshot of Site Homepage:
-TIDO
+![Screen Shot 2022-11-27 at 7 26 58 PM](https://user-images.githubusercontent.com/43096506/204168275-173086f7-eae2-4118-b936-77e225567de1.png)
 
 ## Sprint Review
 - All three sprint backlog items were completed during the sprint. Our site is up and running and can be visited by clicking the link provided in the above section of the README! Below is a list of the items that were completed during the sprint with relevant details regarding the completion of the item.
@@ -361,46 +361,24 @@ TIDO
 TOOD 
 
 **Sprint Review Takeaways**
-TODO
+Overall, Tyrell was impressed with the calculator functionality. We demo'd He understands that we needed to switch from Wix to a more traditional framework and realizes that the added functionality of using such a framework will prove worth the while. We have a few takeaways to formulate as user stories for our backlog:
+- Continue to flesh out the caclulator:
+	- Add some commentary / wording that will naturally explain how to use the tools and that will also serve as a financial budgeting educational piece.
+	- Explain some of the terminology and assumptions being used in the calculator with either footnotes, asterisks, etc.
+	- Add a section to explain the impact of taxes on your return:
+		- Add an input slot for a tax rate.
+		- Below the calculated return,  show the after tax return dollar amount to drive home the effect taxes have on your total return.
 
 **Screenshot of Stakeholder Terrell Skinner Attending Sprint Review**
-TODO
+![Screen Shot 2022-11-27 at 6 34 11 PM](https://user-images.githubusercontent.com/43096506/204170444-d6379119-6c0f-4163-a6c4-1e16c6c29f01.png)
+
 
 **Screenshot of our Revised Product Backlog Following Sprint Review and Stakeholder Feedback!**
-TODO
+![Screen Shot 2022-11-27 at 7 56 05 PM](https://user-images.githubusercontent.com/43096506/204170396-35f1e02e-ac65-477f-bba7-7e2b141265cd.png)
+
 
 ## Sprint Retrospective
-- 	TODO
-- **Our new PBIs are at the top of our PB in the above screenshot of the PB following Spring Review!**
-
-- General Sprint Retrospective Notes:
-TODO
-
-## SPRINT 3
-
-**Forecast Number of Story Points to Be Completed - 3**
-
-**Rationale** - We are setting our set our sprint forecast for sprint three based on what we were able to accomplish in sprint two. We completed three items in sprint two so it made the most sense for us to forecast three items for spring three. Further, based on our evaluation of the work we completed in sprint two, we want to make sure we can really focus on our three items and complete them to the fullest extent. **Only developers participated in pulling user stories into the sprint backlog.**
-
-**Backlog Items for the Sprint**
-
-- As an educator, I should be able to project out a variety of defined timelines and goals with students while using the calculator. - 1 Story Point
-
-- As an educator I should be able to demonstrate the effective use of a strategically planned goal and teach the execution of the proposed plan from the outcomes presented by the calculator. - 1 Story Point
-
-- As a student I should be able to directly employ a proposed budgeting plan to achieve a personally defined goal with the structured guidance provided by the calculator. - 1 Story Point
-
-- Please see Kanban board link for user stories and tasks pulled into the product backlog!
-
-**Backlog Items for the Sprint**
-- Please see Kanban board link for user stories and tasks pulled into the product backlog!
-
-## Kanban Board Link:
-
-## Sprint Burndown Chart
-Burndown Chart as of 11/25/2022:
-
-## Daily Scrum #1 - 11/23/2022
-**Items moved from in progress to DONE (COMPLETED IN LAST 24 HOURS):**
-- Retrospective - Data is being collected from multiple sources for this project. Ensure all members of the team are kept abreast of all communication with sources outside the team and that all new thoughts, ideas and improvements are properly communicated. Due to new instructional guidance we had to adjust the construction of our project; effective communication has allowed us to rework new impediments successfully and produce a quality product. **Completed by Mike and John**
-	- Acceptance Criteria - At the beginning of sprint Three, the developers recap outside communication, new ideas and improvements that have occurred since the last sprint. This activity will be repeated at the beginning of every scrum. **Completed by Mike and John**
+- We would like to make a priority of furthering Mike's knowledge of the HTML framework we are using, Flask, as well as the FinCalc backend written in Python.
+- We would also like to bring John up to speed on the the main goals of Tyrell's foundation to better inform John when developing the site.
+- **Our new PBIs are at the top of our PB in the below screenshot of the PB following Sprint Review!**
+![Screen Shot 2022-11-27 at 8 26 36 PM](https://user-images.githubusercontent.com/43096506/204173056-e031ec85-8218-4236-b8e3-d5017855a7a1.png)
