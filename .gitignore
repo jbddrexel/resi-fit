@@ -119,5 +119,6 @@ dmypy.json
 # Mac stuff
 .DS_Store
 
-# Don't push README. i like to updated it on the github browser
-venv/README.MD
+# Don't push README. i like to updated it on the github browser. This doesnt seem to be working
+# so commenting out for now.
+# venv/README.MD

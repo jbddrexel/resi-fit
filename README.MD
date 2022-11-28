@@ -415,6 +415,4 @@ Overall, Tyrell was impressed with the calculator functionality. We demo'd He un
 - We would like to make a priority of furthering Mike's knowledge of the HTML framework we are using, Flask, as well as the FinCalc backend written in Python.
 - We would also like to bring John up to speed on the main goals of Tyrell's foundation to better inform John when developing the site.
 - **Our new PBIs are at the top of our PB in the below screenshot of the PB following Sprint Review!**
-
-dfasdf
-
+![](../../../Desktop/Screen Shot 2022-11-27 at 8.50.10 PM.png)
