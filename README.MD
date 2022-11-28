@@ -412,7 +412,7 @@ Overall, Tyrell was impressed with the calculator functionality. We demo'd He un
 ![image](https://user-images.githubusercontent.com/43096506/204353361-0c4575fe-8892-48d8-b0ab-52ae8418f25f.png)
 
 
-** CI and CD with Pycharm , Github and Digital Ocean is AWESOME!!!**
+**CI and CD with Pycharm , Github and Digital Ocean is AWESOME!!!**
 
 ## Sprint Retrospective
 **ALL TEAM MEMBERS PARTICIPATED IN THE SPRINT RETROSPECTIVE!**
