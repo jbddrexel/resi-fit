@@ -1,6 +1,5 @@
 from flask import Flask, render_template, request
 
-from app.roman import Roman
 from app.fincalc import FinCalc
 
 app = Flask(__name__)
@@ -22,6 +21,7 @@ def index() -> str:
     fv_pv, fv_pmt, fv_n, fv_rate, fv_freq = fv['pv'], fv['pmt'], fv['n'], fv['rate'], fv['freq']
 
     if not fv['errors']:
+        print('calcing fv val...')
         if fv_freq == 'years':
             fv_val = calc.fv(fv_rate, fv_n, fv_pmt, fv_pv)
         elif fv_freq == 'months':
@@ -30,6 +30,8 @@ def index() -> str:
             fv_val = calc.fv(fv_rate / 252, fv_n, fv_pmt, fv_pv)
     else:
         fv_val = None
+
+    print(fv['errors'])
 
     fv['val'] = fv_val
     # fv = {'fv_pv': fv_pv, 'fv_pmt': fv_pmt, 'fv_n': fv_n, 'fv_rate': fv_rate, 'fv_freq': fv_freq}

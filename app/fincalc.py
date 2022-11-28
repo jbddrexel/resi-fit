@@ -19,12 +19,11 @@ class FinCalc:
             'freq': freq,
             'errors': {}
         }
-        if not pv:
-            values['pv'] = 0
-        if not pmt:
-            values['pmt'] = 0
+        if not pv or pv == '0.0':
+            pv, values['pv'] = 0, 0
+        if not pmt or pmt == '0.0':
+            pmt, values['pmt'] = 0, 0
         if (pv or pmt) and n and rate and freq:
-
             values = self.validate_input(values)
         else:
             values['errors']['param_count'] = 'When using the future value calculator, you must supply values for the number of periods, ' \
@@ -40,10 +39,10 @@ class FinCalc:
             'freq': freq,
             'errors': {}
         }
-        if not pv:
-            values['pv'] = 0
-        if not fv:
-            values['fv'] = 0
+        if not pv or pv == '0.0':
+            pv, values['pv'] = 0, 0
+        if not fv or fv == '0.0':
+            fv, values['fv'] = 0, 0
         if (pv or fv) and n and rate and freq:
             values = self.validate_input(values)
         else:
