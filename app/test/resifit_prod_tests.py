@@ -1,10 +1,10 @@
 import requests
 import unittest
 
-class TestFinCalc(unittest.TestCase):
+class ProdTests(unittest.TestCase):
     url = 'https://resi-fit-quye3.ondigitalocean.app'
 
-    def test_fincalc_returns_fincalc_object(self):
+    def test_server_is_up_and_running(self):
         response = requests.get(self.url)
         status_code = response.status_code
         self.assertEqual(status_code, 200)
