@@ -294,7 +294,7 @@ Screenshot of Site Homepage:
 ![image](https://user-images.githubusercontent.com/43096506/203096953-4774b4eb-773f-4e53-a0a7-4347fcdcbb4e.png)
 
 ## Sprint Burndown Chart
-Burndown Chart as of 11/21/2022:
+**Burndown Chart as of 11/21/2022:**
 ![image](https://user-images.githubusercontent.com/43096506/203096608-84aecc45-4d07-485c-893c-2ecdb039b36b.png)
 
 ## Daily Scrum #2 - 11/20/2022
