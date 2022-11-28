@@ -282,7 +282,7 @@ Screenshot of Site Homepage:
 
 **Forecast Number of Story Points to Be Completed - 3**
 
-**Rationale** - Using the "Yesterday's Weather" technique, we are setting our set our sprint forecast for sprint three based on what we were able to accomplish in sprint two. We completed three items in sprint two so it makes the most sense for us to forecast three items for spring three. Further, based on our evaluation of the work we completed in sprint two, we want to make sure we can really focus on our three items and complete them to the fullest extent. **Only developers participated in pulling user stories into the sprint backlog.**
+**Rationale** - Using the "Yesterday's Weather" technique, we are setting our set our sprint forecast for sprint three based on what we were able to accomplish in sprint two. We completed three items in sprint two so it makes the most sense for us to forecast three items for spring three. Further, based on our evaluation of the work we completed in sprint two, we want to make sure we can really focus on our three items and complete them to the fullest extent. The Kanban board shows which three stories we pulled into the backlog and they are broken down into developer tasks. ** All stories are the right size: each story is less than half our of forecast velocity of three stories. Only developers participated in pulling user stories into the sprint backlog.**
 
 **Backlog Items for the Sprint**
 - Please see Kanban board link for user stories and tasks pulled into the product backlog!
@@ -336,8 +336,7 @@ Burndown Chart as of 11/21/2022:
 ![image](https://user-images.githubusercontent.com/43096506/204018191-f335bd93-de2b-4d9d-adb5-f8176a058b30.png)
 
 ## Unit Tests and Pair Programming
-The unit tests thus far primarly consist of varios tests to test the calulcator functionality.
-Mike and John pair programmed on the development of the unit tests for which we have included a screenshot of this task below. Our unit tests are in the TODO file in our repo and we have included the output of our tests passing successfully below as well.
+The unit tests thus far primarly consist of various tests to test the calulcator functionality. Mike and John pair programmed on the development of the unit tests for which we have included a screenshot of this task below. Our unit tests are in the resifit_unittests.py file in our repo and we have included the output of our tests passing successfully below as well.
 
 **Pair Programming Screenshot**
 ![Screen Shot 2022-11-27 at 6 37 58 PM](https://user-images.githubusercontent.com/43096506/204170489-dfb8e753-477f-4944-9abc-d17454cea992.png)
@@ -416,8 +415,11 @@ Overall, Tyrell was impressed with the calculator functionality. We demo'd He un
 ** CI and CD with Pycharm , Github and Digital Ocean is AWESOME!!!**
 
 ## Sprint Retrospective
+**ALL TEAM MEMBERS PARTICIPATED IN THE SPRINT RETROSPECTIVE!**
 - We would like to make a priority of furthering Mike's knowledge of the HTML framework we are using, Flask, as well as the FinCalc backend written in Python.
+	- At the beginning of the next sprint, John and Mike are going to focus on a breakdown of Flask functionality and the implementation details of FinCalc.py
 - We would also like to bring John up to speed on the main goals of Tyrell's foundation to better inform John when developing the site.
+	- At the beginning of the next spring, Mike will educate John on the main goal's of Tyrells foundation so that John will be more informed when writing code.
 - **Our new PBIs are at the top of our PB in the below screenshot of the PB following Sprint Review!**
 ![Screen Shot 2022-11-27 at 8 50 10 PM](https://user-images.githubusercontent.com/43096506/204350419-501c7ef9-805c-4926-88b4-e106313576ca.png)
 
