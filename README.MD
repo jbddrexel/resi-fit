@@ -282,7 +282,7 @@ Screenshot of Site Homepage:
 
 **Forecast Number of Story Points to Be Completed - 3**
 
-**Rationale** - Using the "Yesterday's Weather" technique, we are setting our set our sprint forecast for sprint three based on what we were able to accomplish in sprint two. We completed three items in sprint two so it makes the most sense for us to forecast three items for spring three. Further, based on our evaluation of the work we completed in sprint two, we want to make sure we can really focus on our three items and complete them to the fullest extent. The Kanban board shows which three stories we pulled into the backlog and they are broken down into developer tasks. ** All stories are the right size: each story is less than half our of forecast velocity of three stories. Only developers participated in pulling user stories into the sprint backlog.**
+**Rationale** - Using the "Yesterday's Weather" technique, we are setting our set our sprint forecast for sprint three based on what we were able to accomplish in sprint two. We completed three items in sprint two so it makes the most sense for us to forecast three items for spring three. Further, based on our evaluation of the work we completed in sprint two, we want to make sure we can really focus on our three items and complete them to the fullest extent. The Kanban board shows which three stories we pulled into the backlog and they are broken down into developer tasks. **All stories are the right size: each story is less than half our of forecast velocity of three stories. Only developers participated in pulling user stories into the sprint backlog.**
 
 **Backlog Items for the Sprint**
 - Please see Kanban board link for user stories and tasks pulled into the product backlog!
