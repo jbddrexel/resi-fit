@@ -338,10 +338,10 @@ Burndown Chart as of 11/21/2022:
 ## Unit Tests and Pair Programming
 The unit tests thus far primarly consist of various tests to test the calulcator functionality. Mike and John pair programmed on the development of the unit tests for which we have included a screenshot of this task below. Our unit tests are in the resifit_unittests.py file in our repo and we have included the output of our tests passing successfully below as well.
 
-**Pair Programming Screenshot**
+**Pair Programming Screenshot:**
 ![Screen Shot 2022-11-27 at 6 37 58 PM](https://user-images.githubusercontent.com/43096506/204170489-dfb8e753-477f-4944-9abc-d17454cea992.png)
 
-**Screenshot of All Tests Passing**!
+**Screenshot of All Tests Passing!**
 ![Screen Shot 2022-11-27 at 7 23 16 PM](https://user-images.githubusercontent.com/43096506/204170519-9c9d04df-b109-4744-bc30-3a82453e807c.png)
 
 ## Product Increment Which is Working Software!
@@ -372,7 +372,7 @@ Overall, Tyrell was impressed with the calculator functionality. We demo'd He un
 		- Add an input slot for a tax rate.
 		- Below the calculated return,  show the after tax return dollar amount to drive home the effect taxes have on your total return.
 
-**Screenshot of Stakeholder Terrell Skinner Attending Sprint Review**
+**Screenshot of Stakeholder Terrell Skinner Attending Sprint Review:**
 ![Screen Shot 2022-11-27 at 6 34 11 PM](https://user-images.githubusercontent.com/43096506/204170444-d6379119-6c0f-4163-a6c4-1e16c6c29f01.png)
 
 **Screenshot of our Revised Product Backlog Following Sprint Review and Stakeholder Feedback!**
@@ -399,16 +399,16 @@ Overall, Tyrell was impressed with the calculator functionality. We demo'd He un
 - The below screenshots serve as evidence that our system is working properly. When tests fail, the software is not deployed. When they pass, the software is deployed.
 
 **Evidence that our CD works properly:**
-- Screenshot of GREEN build being deployed to server:
+- Screenshot of **GREEN** build being deployed to server:
 ![image](https://user-images.githubusercontent.com/43096506/204353164-e733e4c4-6d01-4250-b3cf-bb79686ee626.png)
 
 ** Screenshot of a test that will never pass being committed and pushed to GitHub: **
 ![Screen Shot 2022-11-28 at 12 52 32 PM](https://user-images.githubusercontent.com/43096506/204350868-3e2b4cdb-0787-49de-bc53-0e329069c94d.png)
 
-- Screenshot of RED build NOT being deployed to server:
+- Screenshot of **RED** build **NOT** being deployed to server:
 ![image](https://user-images.githubusercontent.com/43096506/204353214-5ddd2eca-0ee1-4ecc-ada3-4a9fe93a3b5e.png)
 
--Screenshot showing that even though we committed a RED build, the server is still up and running indicating the bad build was not deployed:
+- Screenshot showing that even though we committed a RED build, the server is still up and running indicating the bad build was not deployed:
 ![image](https://user-images.githubusercontent.com/43096506/204353361-0c4575fe-8892-48d8-b0ab-52ae8418f25f.png)
 
 
