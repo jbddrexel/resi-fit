@@ -336,7 +336,7 @@ Burndown Chart as of 11/21/2022:
 ![image](https://user-images.githubusercontent.com/43096506/204018191-f335bd93-de2b-4d9d-adb5-f8176a058b30.png)
 
 ## Unit Tests and Pair Programming
-The unit tests thus far primarly consist of varios tests to test the calulcator funcitonality.
+The unit tests thus far primarly consist of varios tests to test the calulcator functionality.
 Mike and John pair programmed on the development of the unit tests for which we have included a screenshot of this task below. Our unit tests are in the TODO file in our repo and we have included the output of our tests passing successfully below as well.
 
 **Pair Programming Screenshot**
@@ -380,20 +380,20 @@ Overall, Tyrell was impressed with the calculator functionality. We demo'd He un
 ![Screen Shot 2022-11-27 at 9 07 26 PM](https://user-images.githubusercontent.com/43096506/204176514-7560bd16-026f-42fe-9bed-3257629bd18c.png)
 
 ## Continous Integration
-- We have continous intergration set up with a Main branch in GitHub which we push to locally as we write code. 
-- Code changes are pushed to the main branch by developers and there is no branching. We only push to main and must resolve discrepancises if they exists before sending.
+- We have continous integration set up with a Main branch in GitHub which we push to locally as we write code. 
+- Code changes are pushed to the main branch by developers and there is no branching. We only push to main and must resolve discrepancises if they exist before sending.
 - Because we only push to main, and we do this frequently as work is completed, there are no long lived code branches.
 - Every time we push our code to GitHub, our code is automatically built and ready to run on our Digital Ocean server, provided all tests pass.
 
-** Evidence that our CI system works properly: **
+**Evidence that our CI system works properly:**
 - Screenshot of our code being pushed from Pycharm to GitHub
 ![Screen Shot 2022-11-28 at 12 33 09 PM](https://user-images.githubusercontent.com/43096506/204350480-895ead0b-65c1-4b32-8970-986a27f3b485.png)
 
 -Screenshot of Successful Build On Digital Ocean With All Tests Passing:
-** TODO **
+![image](https://user-images.githubusercontent.com/43096506/204352261-fd538f95-1b27-418a-b8b2-9aedc39a3f55.png)
 
 ## Continous Delivery
-- We have a continous delivery sytem running with Digital Ocean that automatically builds our code when we push to GitHub
+- We have a continous delivery sytem running with Digital Ocean that automatically builds our code when we push to GitHub.
 - We have auto deployment set up so that if the build is "green", the software will be automatically deployed to the server.
 	- The build is "green" if all tests pass successfully which Digital Ocean runs when building the software. When the build is green, the software will be deployed to the production server.
 	- The build is "red if all tests DO NOT pass successfully. When the build is red, the software will NOT be deployed to the production server.
@@ -401,16 +401,17 @@ Overall, Tyrell was impressed with the calculator functionality. We demo'd He un
 
 **Evidence that our CD works properly:**
 - Screenshot of GREEN build being deployed to server:
-** TODO **
+![image](https://user-images.githubusercontent.com/43096506/204353164-e733e4c4-6d01-4250-b3cf-bb79686ee626.png)
 
 ** Screenshot of a test that will never pass being committed and pushed to GitHub: **
 ![Screen Shot 2022-11-28 at 12 52 32 PM](https://user-images.githubusercontent.com/43096506/204350868-3e2b4cdb-0787-49de-bc53-0e329069c94d.png)
 
 - Screenshot of RED build NOT being deployed to server:
-**TODO**
+![image](https://user-images.githubusercontent.com/43096506/204353214-5ddd2eca-0ee1-4ecc-ada3-4a9fe93a3b5e.png)
 
--Screenshot of server up and running when either a green build or red build occurs:
-** TODO **
+-Screenshot showing that even though we committed a RED build, the server is still up and running indicating the bad build was not deployed:
+![image](https://user-images.githubusercontent.com/43096506/204353361-0c4575fe-8892-48d8-b0ab-52ae8418f25f.png)
+
 
 ** CI and CD with Pycharm , Github and Digital Ocean is AWESOME!!!**
 
