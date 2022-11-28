@@ -397,7 +397,7 @@ Overall, Tyrell was impressed with the calculator functionality. We demo'd He un
 	- The build is "green" if all tests pass successfully which Digital Ocean runs when building the software. When the build is green, the software will be deployed to the production server.
 	- The build is "red if all tests DO NOT pass successfully. When the build is red, the software will NOT be deployed to the production server.
 - The below screenshots serve as evidence that our system is working properly. When tests fail, the software is not deployed. When they pass, the software is deployed.
-- Further, we wrote a production test to GET our webpage to ensure that our website is up after deployment. We ran this test by running the following command on the server console, though you could run the test file from any machine with the proper libraries installed: python app/test/resifit_prod_tests.py. Below, there is a screenshot of the prod tests passing.
+- Further, we wrote a production test to GET our webpage to ensure that our website is up after deployment. This test can be found in the test folder in resifit_prod_test.py. We added the following line of code in commands->Run Commands as the first command: python app/test/resifit_prod_tests.py. This command runs the production unit tests and confirms that the server is up. Below, there is a screenshot of the prod tests passing.
 
 **Evidence that our CD works properly:**
 **Screenshot of **GREEN** build being deployed to server:**
@@ -413,7 +413,7 @@ Overall, Tyrell was impressed with the calculator functionality. We demo'd He un
 ![image](https://user-images.githubusercontent.com/43096506/204353361-0c4575fe-8892-48d8-b0ab-52ae8418f25f.png)
 
 **Screenshot of the server console showing that our production tests passed:**
-![image](https://user-images.githubusercontent.com/43096506/204376616-0a037be6-78eb-4e36-958b-0c8d3e692cf1.png)
+![image](https://user-images.githubusercontent.com/43096506/204381380-a7ee2c5a-c63f-41f4-b273-8cc9822f16a2.png)
 
 **CI and CD with Pycharm , Github and Digital Ocean is AWESOME!!!**
 
