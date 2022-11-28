@@ -294,7 +294,7 @@ Screenshot of Site Homepage:
 ![image](https://user-images.githubusercontent.com/43096506/203096953-4774b4eb-773f-4e53-a0a7-4347fcdcbb4e.png)
 
 ## Sprint Burndown Chart
-Burndown Chart as of 11/21/2022:
+**Burndown Chart as of 11/21/2022:**
 ![image](https://user-images.githubusercontent.com/43096506/203096608-84aecc45-4d07-485c-893c-2ecdb039b36b.png)
 
 ## Daily Scrum #2 - 11/20/2022
@@ -385,10 +385,10 @@ Overall, Tyrell was impressed with the calculator functionality. We demo'd He un
 - Every time we push our code to GitHub, our code is automatically built and ready to run on our Digital Ocean server, provided all tests pass.
 
 **Evidence that our CI system works properly:**
-- Screenshot of our code being pushed from Pycharm to GitHub
+**Screenshot of our code being pushed from Pycharm to GitHub**
 ![Screen Shot 2022-11-28 at 12 33 09 PM](https://user-images.githubusercontent.com/43096506/204350480-895ead0b-65c1-4b32-8970-986a27f3b485.png)
 
--Screenshot of Successful Build On Digital Ocean With All Tests Passing:
+**Screenshot of Successful Build On Digital Ocean With All Tests Passing:**
 ![image](https://user-images.githubusercontent.com/43096506/204352261-fd538f95-1b27-418a-b8b2-9aedc39a3f55.png)
 
 ## Continous Delivery
@@ -397,20 +397,23 @@ Overall, Tyrell was impressed with the calculator functionality. We demo'd He un
 	- The build is "green" if all tests pass successfully which Digital Ocean runs when building the software. When the build is green, the software will be deployed to the production server.
 	- The build is "red if all tests DO NOT pass successfully. When the build is red, the software will NOT be deployed to the production server.
 - The below screenshots serve as evidence that our system is working properly. When tests fail, the software is not deployed. When they pass, the software is deployed.
+- Further, we wrote a production test to GET our webpage to ensure that our website is up after deployment. This test can be found in the test folder in resifit_prod_test.py. We added the following line of code in commands->Run Commands as the first command: python app/test/resifit_prod_tests.py. This command runs the production unit tests and confirms that the server is up. Below, there is a screenshot of the prod tests passing.
 
 **Evidence that our CD works properly:**
-- Screenshot of **GREEN** build being deployed to server:
+**Screenshot of **GREEN** build being deployed to server:**
 ![image](https://user-images.githubusercontent.com/43096506/204353164-e733e4c4-6d01-4250-b3cf-bb79686ee626.png)
 
-** Screenshot of a test that will never pass being committed and pushed to GitHub: **
+**Screenshot of a test that will never pass being committed and pushed to GitHub:**
 ![Screen Shot 2022-11-28 at 12 52 32 PM](https://user-images.githubusercontent.com/43096506/204350868-3e2b4cdb-0787-49de-bc53-0e329069c94d.png)
 
-- Screenshot of **RED** build **NOT** being deployed to server:
+**Screenshot of **RED** build **NOT** being deployed to server:**
 ![image](https://user-images.githubusercontent.com/43096506/204353214-5ddd2eca-0ee1-4ecc-ada3-4a9fe93a3b5e.png)
 
-- Screenshot showing that even though we committed a RED build, the server is still up and running indicating the bad build was not deployed:
+**Screenshot showing that even though we committed a RED build, the server is still up and running indicating the bad build was not deployed:**
 ![image](https://user-images.githubusercontent.com/43096506/204353361-0c4575fe-8892-48d8-b0ab-52ae8418f25f.png)
 
+**Screenshot of the server console showing that our production tests passed:**
+![image](https://user-images.githubusercontent.com/43096506/204381380-a7ee2c5a-c63f-41f4-b273-8cc9822f16a2.png)
 
 **CI and CD with Pycharm , Github and Digital Ocean is AWESOME!!!**
 
