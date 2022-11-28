@@ -357,13 +357,12 @@ Screenshot of Site Homepage:
 **ALL TEAM MEMBERS PARTICIPATED IN SPRINT REVIEW!**
 - All three sprint backlog items were completed during the sprint. Our site is up and running and can be visited by clicking the link provided in the above section of the README!
 - General Sprint Review Notes
-	- Passing values back and forth between the front end and back end was tricky. This required a lot of coversions from strings to int,string to float, etc.
+	- Both a future value and payment calculator were added to the website and are working software. The calculator uses FinCalc.py as the backend and we utilized the Flask framework to connect the front end to the back end. 
+	- We created 20 micro scale tests to test FinCalc.py.
+	- Passing values back and forth between the front end and back end was tricky. This required a lot of coversions from strings to int, string to float, etc.
 	- We tried to put as much error handling and input validation in place as possible. We think we did a good job but will be monitoring for bad inputs that slip through the cracks!
 	- The current front end is more of a minimum functionalilty prototype whose purpose is really to showcase the FinCalc back end. We will be looking to style this front end up in the next few sprints. 
 	- Link to the Kanban board detailing the completed work: <a href="https://team-resi-fit.youtrack.cloud/agiles/131-3/current">Kanban!</a>
-
-**Backlog Items for the Sprint**
-- TODO
 
 **Sprint Review Takeaways**
 Overall, Tyrell was impressed with the calculator functionality. We demo'd He understands that we needed to switch from Wix to a more traditional framework and realizes that the added functionality of using such a framework will prove worth the while. We have a few takeaways to formulate as user stories for our backlog:
@@ -380,9 +379,41 @@ Overall, Tyrell was impressed with the calculator functionality. We demo'd He un
 **Screenshot of our Revised Product Backlog Following Sprint Review and Stakeholder Feedback!**
 ![Screen Shot 2022-11-27 at 9 07 26 PM](https://user-images.githubusercontent.com/43096506/204176514-7560bd16-026f-42fe-9bed-3257629bd18c.png)
 
+## Continous Integration
+- We have continous intergration set up with a Main branch in GitHub which we push to locally as we write code. 
+- Code changes are pushed to the main branch by developers and there is no branching. We only push to main and must resolve discrepancises if they exists before sending.
+- Because we only push to main, and we do this frequently as work is completed, there are no long lived code branches.
+- Every time we push our code to GitHub, our code is automatically built and ready to run on our Digital Ocean server, provided all tests pass.
+
+** Evidence that our CI system works properly: **
+- Screenshot of our code being pushed from Pycharm to GitHub
+** TODO **
+
+-Screenshot of Successful Build On Digital Ocean With All Tests Passing:
+** TODO **
+
+## Continous Delivery
+- We have a continous delivery sytem running with Digital Ocean that automatically builds our code when we push to GitHub
+- We have auto deployment set up so that if the build is "green", the software will be automatically deployed to the server.
+	- The build is "green" if all tests pass successfully which Digital Ocean runs when building the software. When the build is green, the software will be deployed to the production server.
+	- The build is "red if all tests DO NOT pass successfully. When the build is red, the software will NOT be deployed to the production server.
+- The below screenshots serve as evidence that our system is working properly. When tests fail, the software is not deployed. When they pass, the software is deployed.
+
+** Evidence that our CD works properly: **
+- Screenshot of GREEN build being deployed to server:
+** TODO **
+
+- Screenshot of RED build NOT being deployed to server:
+** TODO **
+
+-Screenshot of server up and running when either a green build or red build occurs:
+** TODO **
+
+** CI and CD with Pycharm , Github and Digital Ocean is AWESOME!!!**
+
 ## Sprint Retrospective
 - We would like to make a priority of furthering Mike's knowledge of the HTML framework we are using, Flask, as well as the FinCalc backend written in Python.
 - We would also like to bring John up to speed on the the main goals of Tyrell's foundation to better inform John when developing the site.
 - **Our new PBIs are at the top of our PB in the below screenshot of the PB following Sprint Review!**
-![Uploading Screen Shot 2022-11-27 at 8.50.10 PM.png…]()
+## TODO
 
