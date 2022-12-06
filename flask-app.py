@@ -15,26 +15,36 @@ def index() -> str:
     fv_n = request.args.get('fv_n', '')
     fv_rate = request.args.get('fv_rate', '')
     fv_freq = request.args.get('fv_freq', 'years')
+    fv_tax_rate = request.args.get('fv_tax_rate', 0)
 
-    fv = calc.validate_fv_input(fv_pv, fv_pmt, fv_n, fv_rate, fv_freq)
+    fv = calc.validate_fv_input(fv_pv, fv_pmt, fv_n, fv_rate, fv_freq, fv_tax_rate)
     print(fv)
-    fv_pv, fv_pmt, fv_n, fv_rate, fv_freq = fv['pv'], fv['pmt'], fv['n'], fv['rate'], fv['freq']
+    fv_pv, fv_pmt, fv_n, fv_rate, fv_freq, fv_tax_rate = fv['pv'], fv['pmt'], fv['n'], fv['rate'], fv['freq'], fv['tax_rate']
 
     if not fv['errors']:
         print('calcing fv val...')
+        print(type(fv_tax_rate))
         if fv_freq == 'years':
             fv_val = calc.fv(fv_rate, fv_n, fv_pmt, fv_pv)
         elif fv_freq == 'months':
             fv_val = calc.fv(fv_rate / 12, fv_n, fv_pmt, fv_pv)
         elif fv_freq == 'days':
             fv_val = calc.fv(fv_rate / 252, fv_n, fv_pmt, fv_pv)
+        pre_tax_fv = fv_val
+        after_tax_fv = calc.apply_tax_rate(fv_val, fv_tax_rate)
+        fv['pre_tax_val'] = pre_tax_fv
+        fv['after_tax_val'] = after_tax_fv
+        fv['total_tax_val'] = calc.tax_difference(pre_tax_fv, after_tax_fv)
     else:
-        fv_val = None
+        pass
+        # pre_tax_fv = None
+        # after_tax_fv = None
 
     print(fv['errors'])
 
-    fv['val'] = fv_val
-    # fv = {'fv_pv': fv_pv, 'fv_pmt': fv_pmt, 'fv_n': fv_n, 'fv_rate': fv_rate, 'fv_freq': fv_freq}
+    # fv['pre_tax_val'] = pre_tax_fv
+    # fv['after_tax_val'] = after_tax_fv
+    # fv['total_tax_val'] = calc.tax_difference(pre_tax_fv, after_tax_fv)
     print(fv)
 
     pmt_pv = request.args.get('pmt_pv', '')
@@ -42,19 +52,28 @@ def index() -> str:
     pmt_n = request.args.get('pmt_n', '')
     pmt_rate = request.args.get('pmt_rate', '')
     pmt_freq = request.args.get('pmt_freq', 'years')
-    pmt = calc.validate_pmt_input(pmt_pv, pmt_fv, pmt_n, pmt_rate, pmt_freq)
+    pmt_tax_rate = request.args.get('pmt_tax_rate', 0)
+    pmt = calc.validate_pmt_input(pmt_pv, pmt_fv, pmt_n, pmt_rate, pmt_freq, pmt_tax_rate)
+    pmt_pv, pmt_fv, pmt_n, pmt_rate, pmt_freq, pmt_tax_rate = pmt['pv'], pmt['fv'], pmt['n'], pmt['rate'], pmt['freq'], pmt['tax_rate']
     # pmt = {'pmt_pv': pmt_pv, 'pmt_fv': pmt_fv, 'pmt_n': pmt_n, 'pmt_rate': pmt_rate, 'pmt_freq': pmt_freq}
 
     if not pmt['errors']:
         if pmt_freq == 'years':
-            pmt_val = calc.pmt(float(pmt_rate), int(pmt_n), float(pmt_pv), float(pmt_fv))
+            pmt_val = calc.pmt(pmt_rate, pmt_n, pmt_pv, pmt_fv)
         elif pmt_freq == 'months':
-            pmt_val = calc.pmt(float(pmt_rate) / 12, int(pmt_n), float(pmt_pv), float(pmt_fv))
+            pmt_val = calc.pmt(pmt_rate / 12, pmt_n, pmt_pv, pmt_fv)
         elif pmt_freq == 'days':
-            pmt_val = calc.pmt(float(pmt_rate) / 252, int(pmt_n), float(pmt_pv), float(pmt_fv))
+            pmt_val = calc.pmt(pmt_rate / 252, pmt_n, pmt_pv, pmt_fv)
+        pre_tax_pmt = pmt_val
+        after_tax_pmt = calc.invert_tax_rate(pmt_val, pmt_tax_rate)
+        pmt['pre_tax_val'] = pre_tax_pmt
+        pmt['after_tax_val'] = after_tax_pmt
+        pmt['total_tax_val'] = calc.tax_difference(pre_tax_pmt, after_tax_pmt) * pmt_n
     else:
-        pmt_val = None
-    pmt['val'] = pmt_val
+        pass
+        # pre_tax_pmt = None
+        # after_tax_pmt = None
+
 
     # pmt, fv = None, None
 

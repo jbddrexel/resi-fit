@@ -10,13 +10,14 @@ class FinCalc:
         print(rep)
         return rep
 
-    def validate_fv_input(self, pv, pmt, n, rate, freq):
+    def validate_fv_input(self, pv, pmt, n, rate, freq, tax_rate):
         values = {
             'pv': pv,
             'pmt': pmt,
             'n': n,
             'rate': rate,
             'freq': freq,
+            'tax_rate': tax_rate,
             'errors': {}
         }
         if not pv or pv == '0.0':
@@ -30,13 +31,14 @@ class FinCalc:
                                'rate, frequency and starting balance and/or contribution.'
         return values
 
-    def validate_pmt_input(self, pv, fv, n, rate, freq):
+    def validate_pmt_input(self, pv, fv, n, rate, freq, tax_rate):
         values = {
             'pv': pv,
             'fv': fv,
             'n': n,
             'rate': rate,
             'freq': freq,
+            'tax_rate': tax_rate,
             'errors': {}
         }
         if not pv or pv == '0.0':
@@ -53,7 +55,7 @@ class FinCalc:
         values = params.copy()
         values['errors'] = {}
         for param, value in params.items():
-            if param in ('fv', 'pv', 'pmt', 'rate',):
+            if param in ('fv', 'pv', 'pmt', 'rate', 'tax_rate'):
                 try:
                     values[param] = float(value)
                 except ValueError as e:
@@ -85,7 +87,14 @@ class FinCalc:
     def rate(self, n, pmt, pv, fv, when='end'):
         return npf.rate(n, pmt, pv, fv, when) * 100
 
+    def apply_tax_rate(self, bal, tax_rate):
+        return bal * (1 - tax_rate / 100)
 
+    def invert_tax_rate(self, bal, tax_rate):
+        return bal / (1 - tax_rate / 100)
+
+    def tax_difference(self, pre_tax_amount, after_tax_amount):
+        return pre_tax_amount - after_tax_amount
 if __name__ == '__main__':
     calc = FinCalc()
     print(calc.fv(.08, 30, -1000, 0))
