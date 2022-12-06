@@ -413,7 +413,7 @@ Overall, Tyrell was impressed with the calculator functionality. We demo'd He un
 ![image](https://user-images.githubusercontent.com/43096506/204353361-0c4575fe-8892-48d8-b0ab-52ae8418f25f.png)
 
 **Screenshot of the server console showing that our production tests passed:**
-![image](https://user-images.githubusercontent.com/43096506/204381380-a7ee2c5a-c63f-41f4-b273-8cc9822f16a2.png)
+![image](https://user-images.githubusercontent.com/43096506/204382932-ec5dc1e2-8394-4a81-8739-f3316b9aba7a.png)
 
 **CI and CD with Pycharm , Github and Digital Ocean is AWESOME!!!**
 
