@@ -31,7 +31,7 @@ class FinCalc:
                                'rate, frequency and starting balance and/or contribution.'
         return values
 
-    def validate_pmt_input(self, pv, fv, n, rate, freq, tax_rate):
+    def validate_pmt_input(self, pv, fv, n, rate, freq, tax_rate=1):
         values = {
             'pv': pv,
             'fv': fv,
