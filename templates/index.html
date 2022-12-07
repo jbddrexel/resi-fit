@@ -7,13 +7,12 @@
 <body>
 {#  <h1>Use this calculator to project the future value of your savings based on regular contributions.</h1>#}
     <div id="banner">RESI-FIT Financial Budgeting Tools</div>
-    <p>Hi there! Welcome to RESI-FIT Financial Budgeting Tools! We know that financial budgeting can be
-        tough and our aim is to help you understand a few of the concepts while giving you the tools to begin
+    <p id="intro_section" class="info_section">Hi there! Welcome to RESI-FIT Financial Budgeting Tools! We know that financial budgeting can be <br>
+        tough and our aim is to help you understand a few of the concepts while giving you the tools to begin <br>
         your financial budgeting journey!
     </p>
-    <br><br>
-    <div id="fv_banner">RESI-FIT Investment Balance Calculator</div>
-    <p>One way to budget financially or to plan for retirement is to project a future savings balance <br>
+    <div id="fv_calc_banner_1" class="section_banner">RESI-FIT Investment Balance Calculator</div>
+    <p id="reasons_to_use_fv_calc", class="info_section">One way to budget financially or to plan for retirement is to project a future savings balance <br>
         based on a current (present) investment amount and a regular contribution amount. This is a good <br>
         approach to budgeting when you have a current amount of money that you would like to invest and <br>
         also have a contribution amount in mind that you can make on a regular basis. You're not <br>
@@ -21,8 +20,8 @@
         you know what you have now and you know what you can contribute. If this sounds like your <br>
         situation, than the Investment Balance Caculator is a great tool for you to being with! <br>
     </p>
-    <div id="fv_how_to_banner">So how do I use this thing?</div>
-    <p>We need to make some assumptions about a few things like the number of periods we would <br>
+    <div id="fv_how_to_banner" class="section_banner">So how do I use this thing?</div>
+    <p id=fv_calc_mechanics" class="info_section">We need to make some assumptions about a few things like the number of periods we would <br>
         like our investment to grow for as well as rate of return for which the growth will occur. <br>
         We strongly encourage you to try a number of different inputs with the Investment Balance Calclulator <br>
         so you can get an idea of how varying the different inputs will affect your Investment Balance. <br>
@@ -34,7 +33,8 @@
         effect will happen more frequently. If you need more of an explanation, here is a link to <br>
         to a good explanation: <a href="https://www.investopedia.com/terms/c/compoundinterest.asp">Compound Interest Investopedia</a>
     </p>
-    <p>
+    <div id="cashflow_sign_banner", class="section_banner">Wait, why are some of these calculator values negative?</div>
+    <p id="cashflow_sign_info", class="info_section">
         Further, a word is needed on how to supply the values for starting balance and expected <br>
         contribution. In financial math, money paid into an investment is signified as a negative <br>
         amount while money received from an investment is a positive amount. To illustrate, when <br>
@@ -46,7 +46,8 @@
         We know this can be confusing so here is a resource where you can practice specifying <br>
         positive and negative cashflows: <a href="https://ecampusontario.pressbooks.pub/businessmath/chapter/cash-flow-using-signs-negatives-in-formulas/">Cashflow Sign Practice</a>
     </p>
-    <p>
+    <div id="input_recs_banner" class="section_banner">Ok I'm ready. What values are realistic inputs?</div>
+    <p id="fv_calc_input_recs" class="info_section">
         One more thing before we get started (sorry!). We want to choose realistic values for <br>
         our calculator input parameters. As a matter of fact, the calculator will not let us put <br>
         in certain values that do not make sense. Our input values largely must be numbers. <br>
@@ -68,8 +69,10 @@
             <h3>{{ error }}</h3>
         {% endfor %}
     {% endif %}
-    <div>
-    <form method="get", id="fv_form">
+    <div id="fv_calc_banner_2" class="section_banner">
+        RESI-FIT Investment Balance Calculator
+    </div>
+    <form method="get", id="fv_form", class="calc_form">
         <label for="fv_pv", class="col1">Starting Balance:</label>
         <input class="rounded", type="text" id="fv_pv" name="fv_pv" value={{ fv['pv'] }}>
         <div id="place_holder_1"></div>
@@ -101,8 +104,8 @@
         {% endif %}
     </form>
     <br><br>
-    <div id="pmt_calculator_banner">RESI-FIT Investment Contribution Calculator</div>
-    <p>
+    <div id="pmt_calc_banner_1", class="section_banner">RESI-FIT Investment Contribution Calculator</div>
+    <p id="pmt_calc_use_cases", class="info_section">
         The Investment Balance Calculator is all well and good but what if you have a specfic <br>
         ending investment balance in mind that you want to target? You have some flexibility <br>
         on an initial investment amount as well as how much you can contribute periodically <br>
@@ -116,7 +119,8 @@
         of return will lower the targeted contribution amount. Raising the ending investment balance <br>
         will raise the targeted contribution amount.
     </p>
-    <p>
+    <div id="pmt_cashflow_sign_banner", class="section_banner">Do I need to use +/- signs for cashflows again?</div>
+    <p id="pmt_cashflow_sign_info", class="info_section">
         Just like with the Investment Balance Calculator, we will need to specify positive and <br>
         negative signs for our cashflows. If we are calculating an expected contribution amount <br>
         where we are investing some money upfront and are also specifying a required ending balance <br>
@@ -129,13 +133,15 @@
         you have an ending balance less than your starting balance. A good exercise would be to play <br>
         around with the tool and see how the different inputs affect the sign of the expected contriution amount! <br>
     </p>
-    <br><br>
     {% if pmt['errors'] %}
         {% for param, error in pmt['errors'].items() %}
             <h3>{{ error }}</h3>
         {% endfor %}
     {% endif %}
-    <form method="get">
+    <div id="pmt_calc_banner_2" class="section_banner">
+        RESI-FIT Investment Contribution Calculator
+    </div>
+    <form method="get" class="calc_form">
         <label for="pmt_pv">Starting Balance:</label>
         <input type="text" id="pmt_pv" name="pmt_pv", value={{ pmt['pv'] }}><br>
         <label for="pmt_fv">Desired Ending Savings Balance:</label>
@@ -161,28 +167,30 @@
             <input type="text" id="total_tax_pmt" name="total_tax_pmt", value={{ pmt['total_tax_val'] }}><br>
         {% endif %}
     </form>
-</body>
+    <br>
 
-<p>
-    Assumptions and Definitions<br>
-    1. Compounding - Our tools assume that the investor will be compounding their rate of return <br>
-    at the specified period in the drop-down (years, months, days, etc.) The means <br>
-    that we expect the user will reinvest their earnings at the expected rate of return. <br>
-    It also means that the investor is not expected to make any withdrawals prior to hitting <br>
-    the investment target. Lastly, we assume that the investor will invest any cashflows in the account <br>
-    (dividends, etc.) at the expected rate of return.
-    2. APR - Annual Percentage Rate. This is the rate of return we expect the investment to earn on <br>
-    an annual basis. This number should be net of any fees that will be charged to the account <br>
-    so that our projections will be more accurate. More on APR in the following link:
-    <a href="https://www.investopedia.com/terms/a/apr.asp">Investopedia APR Article</a>
-    3.  Our calculators don't allow investors to input negative rates. As we saw at different periods <br>
-    thoughout 2009 - 2022, it is entirely possible for investments to have negative interest rates for extended periods <br>
-    or time, particularly government debt. That said, it doesn't make any sense to invest in something <br>
-    that pays a negative rate of return and we discourage using negative rates as an investment rate of return. <br>
-    When investing in a security with a negative rate of return, you essentially make an investment and then <br>
-    instead of getting paid a rate of return, you pay the rate of return! This is not a sound investment plan <br>
-    and is a sure fire way to financial ruin!<br>
-</p>
+    <div id="assumptions_banner" class="section_banner">Assumptions and Definitions</div>
+    <p id="assumptions_section" class="info_section">
+        1. Compounding - Our tools assume that the investor will be compounding their rate of return <br>
+        at the specified period in the drop-down (years, months, days, etc.) The means <br>
+        that we expect the user will reinvest their earnings at the expected rate of return. <br>
+        It also means that the investor is not expected to make any withdrawals prior to hitting <br>
+        the investment target. Lastly, we assume that the investor will invest any cashflows in the account <br>
+        (dividends, etc.) at the expected rate of return.<br>
+        2. APR - Annual Percentage Rate. This is the rate of return we expect the investment to earn on <br>
+        an annual basis. This number should be net of any fees that will be charged to the account <br>
+        so that our projections will be more accurate. More on APR in the following link:
+        <a href="https://www.investopedia.com/terms/a/apr.asp">Investopedia APR Article</a><br>
+        3.  Our calculators don't allow investors to input negative rates. As we saw at different periods <br>
+        thoughout 2009 - 2022, it is entirely possible for investments to have negative interest rates for extended periods <br>
+        or time, particularly government debt. That said, it doesn't make any sense to invest in something <br>
+        that pays a negative rate of return and we discourage using negative rates as an investment rate of return. <br>
+        When investing in a security with a negative rate of return, you essentially make an investment and then <br>
+        instead of getting paid a rate of return, you pay the rate of return! This is not a sound investment plan <br>
+        and is a sure fire way to financial ruin!<br>
+    </p>
+
+</body>
 
 {% block script %}
     <script src="{{url_for('static', filename='resifit.js')}}"></script>

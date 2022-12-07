@@ -58,14 +58,17 @@ def index() -> str:
     # pmt = {'pmt_pv': pmt_pv, 'pmt_fv': pmt_fv, 'pmt_n': pmt_n, 'pmt_rate': pmt_rate, 'pmt_freq': pmt_freq}
 
     if not pmt['errors']:
+        after_tax_fv = pmt_fv / (1 - pmt_tax_rate / 100)
+        print(pmt_fv, after_tax_fv)
         if pmt_freq == 'years':
-            pmt_val = calc.pmt(pmt_rate, pmt_n, pmt_pv, pmt_fv)
+            pre_tax_pmt = calc.pmt(pmt_rate, pmt_n, pmt_pv, pmt_fv)
+            after_tax_pmt = calc.pmt(pmt_rate, pmt_n, pmt_pv, after_tax_fv)
         elif pmt_freq == 'months':
-            pmt_val = calc.pmt(pmt_rate / 12, pmt_n, pmt_pv, pmt_fv)
+            pre_tax_pmt = calc.pmt(pmt_rate / 12, pmt_n, pmt_pv, pmt_fv)
+            after_tax_pmt = calc.pmt(pmt_rate / 12, pmt_n, pmt_pv, after_tax_fv)
         elif pmt_freq == 'days':
-            pmt_val = calc.pmt(pmt_rate / 252, pmt_n, pmt_pv, pmt_fv)
-        pre_tax_pmt = pmt_val
-        after_tax_pmt = calc.invert_tax_rate(pmt_val, pmt_tax_rate)
+            pre_tax_pmt = calc.pmt(pmt_rate / 252, pmt_n, pmt_pv, pmt_fv)
+            after_tax_pmt = calc.pmt(pmt_rate / 252, pmt_n, pmt_pv, after_tax_fv)
         pmt['pre_tax_val'] = pre_tax_pmt
         pmt['after_tax_val'] = after_tax_pmt
         pmt['total_tax_val'] = calc.tax_difference(pre_tax_pmt, after_tax_pmt) * pmt_n

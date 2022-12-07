@@ -426,3 +426,125 @@ Overall, Tyrell was impressed with the calculator functionality. We demo'd He un
 - **Our new PBIs are at the top of our PB in the below screenshot of the PB following Sprint Review!**
 ![Screen Shot 2022-11-27 at 8 50 10 PM](https://user-images.githubusercontent.com/43096506/204350419-501c7ef9-805c-4926-88b4-e106313576ca.png)
 
+## SPRINT 3
+
+**Forecast Number of Story Points to Be Completed - 3**
+
+**Rationale** - Using the "Yesterday's Weather" technique, we are setting our set our sprint forecast for sprint three based on what we were able to accomplish in sprint two. We completed three items in sprint two so it makes the most sense for us to forecast three items for sprint three. We did consider adding another user story to see if we can raise the bar for what we can accomplish in a sprint, but decided against that given our sprint review will be in front of the class and want to make sure our product increment is solid. The Kanban board shows which three stories we pulled into the backlog and they are broken down into developer tasks. **All stories are the right size: each story is less than half our of forecast velocity of three stories. Only developers participated in pulling user stories into the sprint backlog.**
+
+**Backlog Items for the Sprint**
+- Please see Kanban board link for user stories and tasks pulled into the product backlog!
+
+## Kanban Board Link:
+<a href="https://team-resi-fit.youtrack.cloud/agiles/131-3/current">Kanban!</a>
+
+**Sample Image of Kanban Board:**
+![img_1.png](img_1.png)
+
+## Sprint Burndown Chart
+**Burndown Chart as of 12/03/2022:**
+![img_2.png](img_2.png)
+
+## Daily Scrum #2 - 12/03/2022
+**Items moved from in progress to DONE (COMPLETED IN LAST 24 HOURS):**
+- Retrospective - Discuss details of how Flask works and give Mike a more detailed overview of how FinCalc works. **Completed by Mike and John**
+    - Acceptance Criteria: Mike has a firm understanding of the Flask framework and the FinCalc backend. **Completed by Mike and John**
+
+- Retrospective - Give John a breakdown of the three main goals of Tyrell's foundation. **Completed by Mike and John**
+    - Acceptance Criteria - John is aware of the three main goals of Tyrell's foundation and has a good understanding of the foundation's vision. **Completed by Mike and John**
+
+## Next 24 Hours for the Sprint:
+- Mike
+	- Write some new tests for FinCalc.py.
+    - Come up with some front end design ideas to enhance the graphical appeal of our site.
+- John
+	- Build out new FinCalc.py functionality to accept / handle tax rates.
+	- Connect new backend functionality to the front end and display results of applying tax rates.
+			
+## Questions Answered in Scrum:
+- Do you see any impediment that prevents the Developers from meeting the Sprint Goal? 
+	- Static file serving with Flask.
+
+- What are the impediments? 
+	- Static file serving with Flask:
+		- To make our front end look nice, we are going to need to use CSS styling.
+        - To do this, we will need to have CSS file in the project and we need to have Flask serve that file.
+        - We also need to figure out some way to link the CSS file to the index.html file.
+		
+- What is your impediment removal plan?
+	- We know it is possible to use CSS with Flask so we need to do some researching into how it is done.
+	- John has used CSS files with the Django framework before and Flask is a pretty similar framework. John will investigate how he did it with Django and see if that translates.
+    - The internet has many articles on how to accomplish this so it's a matter of finding the right method!
+
+## Progression of Sprint Burndown Chart
+**Burndown Chart as of 12/03/2022:**
+![img_2.png](img_2.png)
+
+**Burndown Chart as of 12/07/2022 After Updating for Done Activities:**
+![img_4.png](img_4.png)
+
+## Unit Tests and Pair Programming
+The unit tests thus far primarily consist of various tests to test the calculator functionality. Mike and John pair programmed on the development of the unit tests for which we have included a screenshot of this task below. Our unit tests are in the resifit_unittests.py file in our repo and we have included the output of our tests passing successfully below as well.
+
+**Pair Programming Screenshot:**
+**TODO**
+	- BBA test
+
+**Screenshot of All Tests Passing!**
+**TODO**
+
+## Product Increment Which is Working Software!
+The website is up and running and can be found by clicking the below link. Please test our website out and let us know what you think! The main additions to the webpage this spring were tax rate functionality of the backend and significant wording to explain how to use the tools and the assumptions that go into the tools. Please do try to break it and let us know how it goes!
+
+<a href="https://resi-fit-quye3.ondigitalocean.app" target="_blank">RESI-FIT!</a>
+
+Screenshot of Site Homepage:
+**TODO**
+
+## Continous Integration
+- We have continuous integration set up with a Main branch in GitHub which we push to locally as we write code. 
+- Code changes are pushed to the main branch by developers and there is no branching. We only push to main and must resolve discrepancises if they exist before sending.
+- Because we only push to main, and we do this frequently as work is completed, there are no long lived code branches.
+- Every time we push our code to GitHub, our code is automatically built and ready to run on our Digital Ocean server, provided all tests pass.
+
+**Evidence that our CI system works properly:**
+**Screenshot of our code being pushed from Pycharm to GitHub**
+![Screen Shot 2022-11-28 at 12 33 09 PM](https://user-images.githubusercontent.com/43096506/204350480-895ead0b-65c1-4b32-8970-986a27f3b485.png)
+
+**Screenshot of Successful Build On Digital Ocean With All Tests Passing:**
+![image](https://user-images.githubusercontent.com/43096506/204352261-fd538f95-1b27-418a-b8b2-9aedc39a3f55.png)
+
+## Continuous Delivery
+- We have a continuous delivery system running with Digital Ocean that automatically builds our code when we push to GitHub.
+- We have auto deployment set up so that if the build is "green", the software will be automatically deployed to the server.
+	- The build is "green" if all tests pass successfully which Digital Ocean runs when building the software. When the build is green, the software will be deployed to the production server.
+	- The build is "red if all tests DO NOT pass successfully. When the build is red, the software will NOT be deployed to the production server.
+- The below screenshots serve as evidence that our system is working properly. When tests fail, the software is not deployed. When they pass, the software is deployed.
+- Further, we wrote a production test to GET our webpage to ensure that our website is up after deployment. This test can be found in the test folder in resifit_prod_test.py. We added the following line of code in commands->Run Commands as the first command: python app/test/resifit_prod_tests.py. This command runs the production unit tests and confirms that the server is up. Below, there is a screenshot of the prod tests passing.
+
+**Evidence that our CD works properly:**
+**Screenshot of **GREEN** build being deployed to server:**
+![image](https://user-images.githubusercontent.com/43096506/204353164-e733e4c4-6d01-4250-b3cf-bb79686ee626.png)
+
+**Screenshot of a test that will never pass being committed and pushed to GitHub:**
+![Screen Shot 2022-11-28 at 12 52 32 PM](https://user-images.githubusercontent.com/43096506/204350868-3e2b4cdb-0787-49de-bc53-0e329069c94d.png)
+
+**Screenshot of **RED** build **NOT** being deployed to server:**
+![image](https://user-images.githubusercontent.com/43096506/204353214-5ddd2eca-0ee1-4ecc-ada3-4a9fe93a3b5e.png)
+
+**Screenshot showing that even though we committed a RED build, the server is still up and running indicating the bad build was not deployed:**
+![image](https://user-images.githubusercontent.com/43096506/204353361-0c4575fe-8892-48d8-b0ab-52ae8418f25f.png)
+
+**Screenshot of the server console showing that our production tests passed:**
+![image](https://user-images.githubusercontent.com/43096506/204382932-ec5dc1e2-8394-4a81-8739-f3316b9aba7a.png)
+
+**CI and CD with Pycharm , Github and Digital Ocean is AWESOME!!!**
+
+## Sprint Retrospective
+**ALL TEAM MEMBERS PARTICIPATED IN THE SPRINT RETROSPECTIVE!**
+**TODO**
+	- Thing to do to make our team better
+	- Concrete plan to make that thing happen
+- **Our new PBIs are at the top of our PB in the below screenshot of the PB following Sprint Review!**
+**TODO**
+
