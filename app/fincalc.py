@@ -10,7 +10,7 @@ class FinCalc:
         print(rep)
         return rep
 
-    def validate_fv_input(self, pv, pmt, n, rate, freq, tax_rate):
+    def validate_fv_input(self, pv, pmt, n, rate, freq, tax_rate=1):
         values = {
             'pv': pv,
             'pmt': pmt,
