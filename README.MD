@@ -484,7 +484,7 @@ Overall, Tyrell was impressed with the calculator functionality. We demo'd He un
 ![Screen Shot 2022-12-07 at 11 27 55 AM](https://user-images.githubusercontent.com/43096506/206915000-0b730186-ebe2-4c29-a87c-6fc2df557ff0.png)
 
 ## Unit Tests and Pair Programming
-The unit tests thus far primarily consist of various tests to test the calculator functionality. Mike and John pair programmed on the development of the unit tests for which we have included a screenshot of this task below. Our unit tests are in the resifit_unittests.py file in our repo and we have included the output of our tests passing successfully below as well. For this sprint, we added 11 more tests and now have a total of 31 tests, per the spec requirement of 30 tests. Further, we implemented a BDD test using a fincalc.feature file and a resifit_steps.py step file!
+The unit tests thus far primarily consist of various tests to test the calculator functionality. Mike and John pair programmed on the development of the unit tests for which we have included a screenshot of this task below. Our unit tests are in the resifit_unittests.py file in our repo and we have included the output of our tests passing successfully below as well. For this sprint, we added 11 more tests and now have a total of 31 tests, per the spec requirement of 30 tests. Further, we implemented a BDD test using a fincalc.feature file and a resifit_steps.py step file! These files are located in resifit/features as that is the location Digital Ocean needs to properly run the tests.
 
 **Pair Programming Screenshot:**
 ![Screen Shot 2022-12-08 at 8 20 54 PM](https://user-images.githubusercontent.com/43096506/206915411-5dcb8e0a-3ca3-45a3-9c95-74b5c80e02f1.png)
@@ -548,7 +548,7 @@ Screenshot of Site Homepage:
 	- We really need to use some kind of framework or GUI tool to speed up front end developement. Maybe we could even use a front end developer. This is an area of which our team is lacking.
 	- New PBI:
       		- Investigate different front end frameworks or tools to speed up front end development. Possibly add a front end developer to the team who specializes in GUI.
-    	- Acceptance Criteria:
+	- Acceptance Criteria:
       		- Mike and John settle on a tool to use for front end development or onboard a front end develeper to build out the front end.
 - **Our new PBI is at the top of our PB in the below screenshot of the PB following Sprint Review!**
 ![Screen Shot 2022-12-11 at 11 19 08 AM](https://user-images.githubusercontent.com/43096506/206915365-d889296d-11c2-47f4-ba63-0a23aefe4e28.png)
