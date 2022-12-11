@@ -20,10 +20,10 @@ class FinCalc:
             'tax_rate': tax_rate,
             'errors': {}
         }
-        if not pv or pv == '0.0':
-            pv, values['pv'] = 0, 0
-        if not pmt or pmt == '0.0':
-            pmt, values['pmt'] = 0, 0
+        if not pv or pv in ('0.0', '0'):
+            pv, values['pv'] = 0.0, 0.0
+        if not pmt or pmt in ('0.0', '0'):
+            pmt, values['pmt'] = 0.0, 0.0
         if (pv or pmt) and n and rate and freq:
             values = self.validate_input(values)
         else:
@@ -41,10 +41,10 @@ class FinCalc:
             'tax_rate': tax_rate,
             'errors': {}
         }
-        if not pv or pv == '0.0':
-            pv, values['pv'] = 0, 0
-        if not fv or fv == '0.0':
-            fv, values['fv'] = 0, 0
+        if not pv or pv in ('0.0', '0'):
+            pv, values['pv'] = 0.0, 0.0
+        if not fv or fv in ('0.0', '0'):
+            fv, values['fv'] = 0.0, 0.0
         if (pv or fv) and n and rate and freq:
             values = self.validate_input(values)
         else:
@@ -63,6 +63,8 @@ class FinCalc:
                 else:
                     if param == 'rate' and values[param] <= 0:
                         values['errors'][param] = f'Try inputting a rate greater than zero. Investing at rates <= 0 is not a sound investment plan!'
+                    elif param == 'tax_rate' and values[param] < 0:
+                        values['errors'][param] = f'Try inputting a tax rate greater than or equal to zero.'
             elif param == 'freq':
                 if value not in ('years', 'months', 'days'):
                     values['errors'][param] = f'Please use a payment frequency of either years, months or days.'
@@ -95,6 +97,7 @@ class FinCalc:
 
     def tax_difference(self, pre_tax_amount, after_tax_amount):
         return pre_tax_amount - after_tax_amount
+
 if __name__ == '__main__':
     calc = FinCalc()
     print(calc.fv(.08, 30, -1000, 0))

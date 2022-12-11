@@ -542,9 +542,16 @@ Screenshot of Site Homepage:
 
 ## Sprint Retrospective
 **ALL TEAM MEMBERS PARTICIPATED IN THE SPRINT RETROSPECTIVE!**
-**TODO**
-	- Thing to do to make our team better
-	- Concrete plan to make that thing happen
+- Overall, the sprint went well. We were able to complete all the items in our sprint backlog and were
+able to deliver a solid product increment. That said, there is always room to improve!
+	- We really need to use some kind of framework or GUI tool to speed up front end developement. Maybe 
+we could even use a front end developer. This is an area of which our team is lacking.
+	- New PBI:
+      - Investigate different front end frameworks or tools to speed up front end development. Possibly
+add a front end developer to the team who specializes in GUI.
+    - Acceptance Criteria:
+      - Mike and John settle on a tool to use for front end development or onboard a front end develeper to build 
+out the front end.
 - **Our new PBIs are at the top of our PB in the below screenshot of the PB following Sprint Review!**
 **TODO**
 

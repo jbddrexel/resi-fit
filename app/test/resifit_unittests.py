@@ -199,6 +199,86 @@ class TestFinCalc(unittest.TestCase):
         self.assertEqual(values['errors']['param_count'], 'When using the payment calculator, you must supply values for the number of periods, ' \
                                'rate, frequency and starting balance and/or ending balance.')
 
+    def test_apply_tax_rate_1(self):
+        bal = self.calc.apply_tax_rate(100, 30)
+        self.assertEqual(bal, 70)
+
+    def test_apply_tax_rate_2(self):
+        bal = self.calc.apply_tax_rate(100, 70)
+        self.assertEqual(int(bal), 30)
+
+    def test_invert_tax_rate_1(self):
+        bal = round(self.calc.invert_tax_rate(100, 30), 2)
+        self.assertEqual(bal, 142.86)
+
+    def test_invert_tax_rate_2(self):
+        bal = round(self.calc.invert_tax_rate(100, 70), 2)
+        self.assertEqual(bal, 333.33)
+
+    def test_bad_tax_rate_pmt_calc(self):
+        values = self.calc.validate_pmt_input(-100, 1000, 10, 8, 'years', -70)
+        self.assertEqual(values['errors']['tax_rate'],
+                         f'Try inputting a tax rate greater than or equal to zero.')
+    def test_bad_tax_rate_pv_calc(self):
+        values = self.calc.validate_fv_input(-100, -100, 10, 8, 'years', -70)
+        self.assertEqual(values['errors']['tax_rate'],
+                         f'Try inputting a tax rate greater than or equal to zero.')
+
+    def test_good_tax_rate(self):
+        params = {
+            'tax_rate': 20
+        }
+        values = self.calc.validate_input(params)
+        self.assertEqual(values['errors'], {})
+
+    def test_bad_tax_rate_validate_input_1(self):
+        params = {
+            'pv': -100000,
+            'pmt': -1000,
+            'fv': 0,
+            'n': 30,
+            'rate': 8,
+            'freq': 'years',
+            'tax_rate': 'great!'
+        }
+        values = self.calc.validate_input(params)
+        self.assertEqual(values['errors']['tax_rate'],
+                         f'great! is not a valid input. Try inputting a number.')
+
+    def test_bad_tax_rate_validate_input_2(self):
+        params = {
+            'pv': -100000,
+            'pmt': -1000,
+            'fv': 0,
+            'n': 30,
+            'rate': 8,
+            'freq': 'years',
+            'tax_rate': -30
+        }
+        values = self.calc.validate_input(params)
+        self.assertEqual(values['errors']['tax_rate'],
+                         f'Try inputting a tax rate greater than or equal to zero.')
+
+    def test_bad_tax_rate_only_1(self):
+        params = {
+            'tax_rate': -30
+        }
+        values = self.calc.validate_input(params)
+        self.assertEqual(values['errors']['tax_rate'],
+                         f'Try inputting a tax rate greater than or equal to zero.')
+
+    def test_bad_tax_rate_only_2(self):
+        params = {
+            'tax_rate': 'bad rate!'
+        }
+        values = self.calc.validate_input(params)
+        self.assertEqual(values['errors']['tax_rate'],
+                         f'bad rate! is not a valid input. Try inputting a number.')
+
+    def test_tax_difference(self):
+        diff = self.calc.tax_difference(100000, 70000)
+        self.assertEqual(diff, 30000)
+
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     unittest.main(verbosity=2)
