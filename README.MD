@@ -550,10 +550,10 @@ We will be doing our sprint review in class on 12/12/2022.
 **ALL TEAM MEMBERS PARTICIPATED IN THE SPRINT RETROSPECTIVE!**
 - Overall, the sprint went well. We were able to complete all the items in our sprint backlog and were able to deliver a solid product increment. That said, there is always room to improve!
 	- We really need to use some kind of framework or GUI tool to speed up front end developement. Maybe we could even use a front end developer. This is an area of which our team is lacking.
-	- New PBI:
-      		- Investigate different front end frameworks or tools to speed up front end development. Possibly add a front end developer to the team who specializes in GUI.
-	- Acceptance Criteria:
-      		- Mike and John settle on a tool to use for front end development or onboard a front end develeper to build out the front end.
+		- New PBI:
+      			- Investigate different front end frameworks or tools to speed up front end development. Possibly add a front end developer to the team who specializes in GUI.
+		- Acceptance Criteria:
+      			- Mike and John settle on a tool to use for front end development or onboard a front end develeper to build out the front end.
 - **Our new PBI is at the top of our PB in the below screenshot of the PB following Sprint Review!**
 ![Screen Shot 2022-12-11 at 11 19 08 AM](https://user-images.githubusercontent.com/43096506/206915365-d889296d-11c2-47f4-ba63-0a23aefe4e28.png)
 
