@@ -542,6 +542,10 @@ Screenshot of Site Homepage:
 
 **CI and CD with Pycharm , Github and Digital Ocean is AWESOME!!!**
 
+## Sprint Review
+We will be doing our sprint review in class on 12/12/2022.
+**We rehearsed our presentation on 12/11/2022**
+
 ## Sprint Retrospective
 **ALL TEAM MEMBERS PARTICIPATED IN THE SPRINT RETROSPECTIVE!**
 - Overall, the sprint went well. We were able to complete all the items in our sprint backlog and were able to deliver a solid product increment. That said, there is always room to improve!
