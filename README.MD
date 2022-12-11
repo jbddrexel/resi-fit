@@ -484,15 +484,15 @@ Overall, Tyrell was impressed with the calculator functionality. We demo'd He un
 ![Screen Shot 2022-12-07 at 11 27 55 AM](https://user-images.githubusercontent.com/43096506/206915000-0b730186-ebe2-4c29-a87c-6fc2df557ff0.png)
 
 ## Unit Tests and Pair Programming
-The unit tests thus far primarily consist of various tests to test the calculator functionality. Mike and John pair programmed on the development of the unit tests for which we have included a screenshot of this task below. Our unit tests are in the resifit_unittests.py file in our repo and we have included the output of our tests passing successfully below as well. For this sprint, we added 11 more tests and now have a total of 31 tests, per the spec requirement of 30 tests.
+The unit tests thus far primarily consist of various tests to test the calculator functionality. Mike and John pair programmed on the development of the unit tests for which we have included a screenshot of this task below. Our unit tests are in the resifit_unittests.py file in our repo and we have included the output of our tests passing successfully below as well. For this sprint, we added 11 more tests and now have a total of 31 tests, per the spec requirement of 30 tests. Further, we implemented a BDD test using a fincalc.feature file and a resifit_steps.py step file!
 
 **Pair Programming Screenshot:**
 ![Screen Shot 2022-12-08 at 8 20 54 PM](https://user-images.githubusercontent.com/43096506/206915411-5dcb8e0a-3ca3-45a3-9c95-74b5c80e02f1.png)
 
-**TODO**
-	- BBA test
+**Screenshot of New BDD Test Passing!**
+![Screen Shot 2022-12-11 at 2 03 37 PM](https://user-images.githubusercontent.com/43096506/206923509-0c26369a-2515-4159-93f8-c7bad4657fab.png)
 
-**Screenshot of All Tests Passing!**
+**Screenshot of All TDD Tests Passing!**
 ![Screen Shot 2022-12-10 at 10 23 51 AM](https://user-images.githubusercontent.com/43096506/206915018-d4e94451-206d-4632-944f-284d3bb37e2f.png)
 
 ## Product Increment Which is Working Software!
