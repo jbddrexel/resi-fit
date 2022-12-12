@@ -545,7 +545,7 @@ Screenshot of Site Homepage:
 ## Sprint Review
 We will be doing our sprint review in class on 12/12/2022.
 **We rehearsed our presentation on 12/11/2022.** We also took the feed back from our classmates and created a few new PBIs that can be identifted on the "unscheduled" sprint in Youtrack and start with "In Class Sprint Review - ". 
-**Screenshot of our new PBIs from In Class Sprint Review*:*
+**Screenshot of our new PBIs from In Class Sprint Review:**
 ![image](https://user-images.githubusercontent.com/43096506/207166112-c3a666c9-4026-479f-b49e-3f4b8e917888.png)
 
 
